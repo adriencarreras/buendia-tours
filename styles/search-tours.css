@@ -1,0 +1,526 @@
+.expanded-sidebar-bg{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 0;
+    transition: background-color ease-in 250ms;
+}
+
+
+section.hero{
+    height: 100vh;
+    padding: 0 var(--padding-wide);
+    overflow: hidden;
+    background-image: url(/media/activities/zipline_00.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: shrinkHero 1000ms ease-in forwards;
+}
+
+@keyframes shrinkHero {
+    from{
+        height: 100vh
+    }
+    to{
+        height: 75vh
+    }
+}
+
+.hero .navigation{
+    position: absolute;
+    top: calc(10vh + 68px);
+    left: var(--padding-wide);
+}
+
+
+.hero .navigation a{
+    color: var(--clr-white);
+    position: relative;
+    position: relative;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero .navigation a:after{
+    content:"/";
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    right: -.5rem;
+    transform: translateY(-50%);
+}
+
+.hero .navigation a:last-child{
+    font-weight: 300;
+}
+
+.hero .navigation a:last-child:after{
+    content:"";
+}
+
+.hero h1{
+    position: absolute;
+    bottom: 56px;
+    left: 56px;
+    font-weight: 900;
+    color: var(--clr-white);
+    z-index: 1;
+    text-shadow: 1px 2px 6px rgba(0,0,0,.3);
+    opacity: 0;
+    animation: fadeInH1 1000ms ease-in-out forwards;
+    animation-delay: 500ms;
+}
+
+@keyframes fadeInH1 {
+    from{
+        opacity: 0;
+        transform: translateY(100%)
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.catalog{
+    padding: 24px var(--padding-wide);
+    display: flex;
+    gap: 28px;
+    width: 100%;
+    align-items: start;
+    justify-content: center;
+
+    background: var(--clr-neutral-200);
+}
+
+.catalog .sidebar{
+    width: 100%;
+    max-width: 300px;
+    min-width: 230px;
+}
+
+.catalog .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* sidebar styling */
+.catalog .sidebar .container{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.catalog .sidebar .container .close-btn{
+    display: none;
+
+    width: fit-content;
+    font-size: 14px;
+    padding: .3rem .8rem;
+    border: none;
+    border-radius: 1rem;
+    opacity: 1;
+    
+    color: var(--clr-black);
+    background: transparent;
+    backdrop-filter: blur(20px);
+    
+    
+    cursor: pointer;
+}
+
+.catalog .sidebar .container .close-btn i{
+    margin-right: .5rem;
+    font-size: 14px;
+}
+
+.catalog .sidebar .container .close-btn:active{
+    background: #98989842;
+}
+
+.catalog .sidebar .box{
+    background: var(--clr-white);
+    width: 100%;
+    overflow: hidden;
+}
+
+.catalog .sidebar .box-title{
+    background: var(--clr-accent-fade);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px ;
+
+    cursor: pointer;
+}
+
+.catalog .sidebar .box-title p{
+    font-weight: 500;
+    color: var(--clr-accent);
+}
+
+.catalog .sidebar .box-title .fa-angle-down{
+    transition: all ease-in-out 250ms;
+    color: var(--clr-accent);
+}
+
+.catalog .sidebar .box-content{
+    overflow: hidden;
+    padding: 6px 0;
+}
+
+.catalog .sidebar .wrapper{
+    padding: 8px 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog .sidebar .heading{
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+
+.catalog .sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+
+.catalog .sidebar li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none; /* For Safari */
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+}
+
+/* Style the checkbox when checked */
+input[type="checkbox"]:checked {
+    background-color: var(--clr-highlight);
+    border-color: var(--clr-highlight);
+}
+
+/* Custom checkmark */
+input[type="checkbox"]:checked::before {
+    content: '✔';
+    color: white;
+    font-size: .75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.catalog .sidebar .box.filters .box-title p,
+.catalog .sidebar .box.filters .fa-angle-down,
+.catalog .sidebar .box.filters .heading{
+    color: var(--clr-highlight);
+}
+
+.catalog .sidebar .box.filters .box-title{
+    background: var(--clr-highlight-fade);
+}
+
+.catalog .sidebar .box.filters li{
+    opacity: .5;
+}
+
+.catalog .sidebar .box.filters li:has(input:checked){
+    opacity: 1;
+}
+
+.catalog .sidebar li label{
+    font-size: 1rem;
+    font-weight: var(--text-weight);
+    line-height: 1.25rem;
+    user-select: none;
+    padding: 4px 0px;
+    cursor: pointer;
+}
+
+.catalog .sidebar li label:hover{
+    color: var(--clr-highlight);
+}
+
+.catalog .sidebar .flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog .sidebar .flex-container > *{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.825rem;
+    padding: 6px 18px;
+    color: var(--clr-neutral-300);
+    transition: var(--transition-default);
+}
+
+.catalog .sidebar .flex-container > *:hover{
+    color: var(--clr-neutral-400);
+}
+
+
+.catalog .sidebar .box-title.hidden .fa-angle-down{
+    transform: rotate(-90deg);
+}
+
+.catalog .sidebar .box-title.hidden + .box-content{
+    height: 0;
+    padding: 0;
+}
+
+.catalog .sidebar .link{
+    position: relative;
+    width: 100%;
+    padding: 4px 20px;
+    padding-left: 20px;
+    text-decoration: none;
+
+    transition: all ease-out 250ms;
+}
+
+.catalog .sidebar .link::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 12px;
+    left: 0;
+    transform: translateY(-50%);
+    background: var(--clr-black);
+    transition: all ease-out 250ms;
+}
+
+.catalog .sidebar li .link:hover{
+    padding-left: 25px;
+    color: var(--clr-accent);
+}
+
+.catalog .sidebar li .link:hover::before{
+    width: 16px;
+    background: var(--clr-accent);
+}
+
+
+.catalog .expand-sidebar{
+    display: none;
+    
+}
+
+.catalog .expand-sidebar i{
+    margin-right: .5rem;
+}
+
+
+/* --------------- tour cards styling -------------- */
+.catalog .main .warning{
+    text-align: start;
+    text-transform: none;
+}
+
+.catalog .card {
+    text-decoration: none;
+    width: 100%;
+    max-width: 850px;
+    height: 262px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    background: var(--clr-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.catalog .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.catalog .card-content {
+    flex: 1 1 60%;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.catalog .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--clr-neutral-400);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: start;
+}
+
+.catalog .card-price {
+    padding: 6px 10px;
+    border-radius: 4px;
+    background: var(--clr-tag);
+    background: var(--clr-highlight-fade);
+    font-size: 14px;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.catalog .card-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--clr-neutral-400);
+    margin-top: 16px;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis;
+}
+
+.catalog .image-container {
+    flex: 0 0 40%; /* Fixed width proportion for the image */
+    height: auto;
+    display: flex;
+
+    background-color: #f0f0f0; /* Grey placeholder background */
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.catalog .image-container .lazy-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills its container */
+    object-position: center;
+    opacity: 0; /* Initially hidden */
+
+    transition: all 0.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    /* ------------------  to fix ---------------------- */
+    .catalog .card {
+        flex-direction: column-reverse;
+        height: fit-content;
+        height: 387px;  
+    }
+    
+    .catalog .card-content{   
+    }
+
+    .catalog .card-description{
+        display: none;
+    }
+    
+    .catalog .card-image img{
+        /* aspect-ratio: 4 / 3; */
+    }
+}
+
+
+
+/* ///////////////////////////
+////////////////////////////////////
+///////// MEDIA QUERIES /////////
+////////////////////////////////////
+/////////////////////////// */
+
+
+@media (max-width: 990px) {
+    .catalog .main{
+        padding-top: 80px;
+    }
+
+    .catalog .sidebar{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        z-index: 50;
+        background: #fff;
+        padding: var(--padding-mobile);
+        
+        /* to fix! */
+        overflow: scroll;
+        
+        left: -100%;
+        transition: left ease-in-out 450ms;
+    }
+
+    .catalog .sidebar .box{
+        border: none;
+    }
+
+    .catalog .sidebar .box-title{
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid var(--clr-accent);
+    }
+    
+    .catalog .sidebar .box.filters .box-title{
+        background: transparent;
+        border-bottom: 1px solid var(--clr-highlight);
+    }
+
+    .catalog .expand-sidebar{
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: var(--padding-wide);
+
+        padding: .3rem 1rem;
+        border: 1px solid #000;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .catalog .sidebar.expanded{
+        left: 0%;
+    }
+
+    body:has(.sidebar.expanded) .expanded-sidebar-bg{
+        background-color: rgba(0,0,0,.75);
+        z-index: 10;
+    }
+}
+
+@media (max-width: 430px){
+    .hero h1{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .catalog .sidebar.expanded .container .close-btn{
+        display: block;
+    }
+}
