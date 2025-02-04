@@ -557,9 +557,7 @@ header{ animation-delay: 1000ms }
     }
 
     .tours .grid .card:nth-child(4),
-    .tours .grid .card:nth-child(5),
-    .tours .grid .card:nth-child(6),
-    .tours .grid .card:nth-child(7){
+    .tours .grid .card:nth-child(5){
         display: none;
     }
 
