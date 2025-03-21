@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/tour.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="media/pngs/logo-buendia-tours-6.png">
+    <title>Buendía Tours - Catamaran Tour</title>
+</head>
+<body>
+    <div class="header-black-bg js-header-black-bg"></div>
+    <div class="modal-black-bg js-modal-black-bg"></div>
+
+    <div class="modal js-modal">
+        <button class="close"><i class="fa-solid fa-xmark"></i></button>
+        
+        <div class="top-row">
+            <i class="icon fa-regular fa-comments"></i>
+            <h2>Contact Us</h2>
+        </div>
+        
+        <div class="content">
+            <div class="text-wrapper">
+                <p>Hey there! If you're interested in any of the activities or services, we can put you in touch with the right company and help organize everything for you!</p>
+                <i class="emoji fa-regular fa-face-smile-wink"></i>
+            </div>
+        </div>
+
+        <div class="bottom-row">
+            <div class="btn-container">
+                <button class="js-copy-button" data-id="whatsapp">
+                    <span>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        (+506) 8744-0011
+                    </span>
+                </button>
+                <button class="js-copy-button" data-id="email">
+                    <span>info@buendiatours.com</span>
+                </button>
+            </div>
+
+            <p class="disclaimer">Just to be clear — we're not a tour operator, we just want to promote local businesses that we like!</p>
+        </div>
+    </div>
+
+    <header class="js-header">
+        <div class="mobile">
+            <a href="index.html" class="logo">
+                <img src="media/pngs/logo-buendia-tours-6.png" alt="Buendía Tours logo">
+            </a>
+
+            <button class="burger-btn js-burger-btn">
+                <div class="burger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </button>
+        </div>
+        <div class="extended js-extended">
+            <div class="navigation">
+                <a class="js-nav-link" data-id="tours-link"><i class="fa-solid fa-chevron-down"></i>Tours</a>
+                <a class="js-nav-link" data-id="services-link"><i class="fa-solid fa-chevron-down"></i>Services</a>
+                <a class="js-nav-link" data-id="info-link"><i class="fa-solid fa-chevron-down"></i>Info</a>
+            </div>
+
+            <div class="cta">
+                <button class="modal-btn"><i class="fa-brands fa-whatsapp"></i>Contact Us</button>
+            </div>
+        </div>
+
+        <div class="dropdown-container js-dropdown-container">
+            <button class="return-btn js-mobile-return-btn"><i class="fa-solid fa-angle-left"></i></button>
+            <div class="menu">
+                <div class="section section-tours js-dropdown-text" data-id="tours-link">
+                    <div class="text-wrapper">
+                        <h3>Local Tours</h3>
+                        <a href="atv.html">ATV Cultural Tours</a>
+                        <a href="catamaran.html">Catamaran Tour</a>
+                        <a href="scuba.html">Scuba Diving</a>
+                        <a href="horse.html">Horseback Riding</a>
+                        <a href="coming-soon.html">Snorkeling</a>
+                        <a href="coming-soon.html">Private Sailing Charter</a>
+                    </div>
+                    <div class="text-wrapper">
+                        <h3>Day Trips</h3>
+                        <a href="buenavista.html">Buenavista Family Adventure</a>
+                        <a href="diamante.html">Diamante Adventure Combo</a>
+                        <a href="leona.html">La Leona Waterfall</a>
+                        <a href="canyon.html">Wild Canyon Adrenaline Combo</a> 
+                        <a href="celeste.html">Rio Celeste Rainforest Waterfalls</a> 
+                        <a href="river-float.html">Wildlife River Float & Sloth Trip</a> 
+                        <a href="fumaroles.html">Rincón Fumaroles & Waterfall Swim</a> 
+                    </div>
+                </div>
+            
+                <div class="section section-services js-dropdown-text" data-id="services-link">
+                    <div class="text-wrapper">
+                        <h3>Transportation</h3>
+                        <a href="shuttle.html">Airport Shuttle</a>
+                        <a href="taxi.html">Local Taxi & Uber</a>
+                        <a href="golf-cart.html">Golf Cart Rentals</a>
+                    </div>
+            
+                    <div class="text-wrapper">
+                        <h3>Special Events</h3>
+                        <a href="coming-soon.html">Private Chef</a>
+                        <a href="coming-soon.html">Photographer</a>
+                    </div>
+            
+                    <div class="text-wrapper">
+                        <h3>Our Luxury Airbnb</h3>
+                        <a href="https://www.airbnb.com/rooms/779108667579821930?source_impression_id=p3_1731976665_P3VT8i3XAZTDteLu" target="_blank" title="Entire rental unit in Potrero, Costa Rica">Buendía Lux</a>
+                    </div>
+                </div>
+            
+                <div class="section section-info js-dropdown-text" data-id="info-link">
+                    <div class="text-wrapper">
+                        <h3>Information</h3>
+                        <a href="coming-soon.html">About Us</a>
+                        <a href="coming-soon.html">Potrero Blog</a>
+                        <a href="coming-soon.html">Events</a>
+                        <a href="coming-soon.html">Testimonials</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ----- Hero section ----- -->
+    <section class="hero flex-mid catamaran">
+        <div class="bg-overlay"></div>
+        <div class="bg-gradient-overlay"></div>
+
+        <div class="navigation">
+            <a href="index.html" class="animate-link">Home</a>
+            <a href="search-tours.html" class="animate-link">All Tours</a>
+            <a href="#">Catamaran Tour</a>
+        </div>
+        
+        <div class="text-wrapper">
+            <h1>Catamaran Tour</h1>
+        </div>
+    </section>
+
+    <div class="fixed-row">
+        <div class="quick-links">
+            <a class="js-nav-a active" href="#overview">Overview</a>
+            <a class="js-nav-a" href="#reviews">Reviews</a>
+            <a class="js-nav-a" href="#transportation">Transportation</a>
+            <a class="js-nav-a" href="#recommendations">Similar Tours</a>
+            <a class="js-nav-a" href="#faq">FAQs</a>
+            <a class="js-nav-a" href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- ----- Overview section ----- -->
+    <section class="js-section" id="overview">
+        <div class="content">
+            <div class="sub-section">
+                <div class="title-row">
+                    <h3>Description</h3>
+                    <div class="quick-info">
+                        <div class="wrapper">
+                            <span>
+                                <i class="icon fa-solid fa-location-dot"></i>
+                                Departure —</span>
+                                <span class="location">Playa Flamingo</span>
+                        </div>
+                        <div class="wrapper">
+                            <span>
+                                <i class="icon fa-regular fa-clock"></i>Duration —</span>
+                            <span class="duration">4 hours</span> 
+                        </div>
+                    </div>
+                </div>
+                <p>Sailing along the Guanacaste coast on a catamaran is one of those experiences that just feels like vacation. The boat glides over the waves, the breeze is perfect, and before you know it, you're anchored near a hidden beach. That’s when the real fun begins—snorkeling, kayaking, paddleboarding, or just floating with a drink in hand. Pure relaxation.</p>
+
+                <p>Fresh snacks keep you fueled, but the real highlight? Sailing back into one of those unreal Costa Rican sunsets. Picture yourself stretched out on deck, watching the sky turn shades of orange, pink, and gold. And if you’re lucky, you might spot dolphins playing in the waves, rays leaping from the water, or even a humpback whale making an appearance. No two trips are ever the same, and that’s what makes it so special.</p>
+            </div>
+
+            <div class="sub-section included">
+                <h3>What's Included</h3>
+                <p>
+                    <ul>
+                        <!-- list of included -->
+                        <li><i class="fa-solid fa-check"></i>Snorkeling equipment and guide</li>
+                        <li><i class="fa-solid fa-check"></i>Paddle boards</li>
+                        <li><i class="fa-solid fa-check"></i>Kayaks</li>
+                        <li><i class="fa-solid fa-check"></i>Open bar</li>
+                        <li><i class="fa-solid fa-check"></i>Fresh snacks and refreshments</li>
+                        <li><i class="fa-solid fa-check"></i>Transportation (pick up & drop off)</li>
+                    </ul>
+                </p>
+            </div>               
+        </div>
+
+        <div class="side-pannel">               
+            <div class="pricing">
+                <div class="body">
+                    <div class="option">
+                        <div class="row">
+                            <p>Shared Morning Tour</p>
+                            <p>$85*</p>
+                        </div>
+                        <span class="description">Ideal for a relaxing day full of water activities and wildlife posibilities!</span>
+                        <span class="small-fs">($60 for children)</span>
+                    </div>  
+                    <div class="option">
+                        <div class="row">
+                            <p>Shared Sunset Tour</p>
+                            <p>$90*</p>
+                        </div>
+                        <span class="description">Sailing tour that builds up to a picturesque sunset over the Pacific Ocean.</span>
+                        <span class="small-fs">($65 for children)</span>
+                    </div>
+                                        
+                </div>   
+                <button class="btn modal-btn">Book Tour</button>
+                <p class="note">*13% VAT tax not included.</p>        
+            </div>
+
+            <div class="gallery">
+                <div class="container">
+                    <img src="/media/default.jpg" alt="">
+                    <button class="preview-btn">Gallery unavailable</button>
+                    <i class="fa-regular fa-images"></i>
+                    <span class="image-count">1 / 1 photos</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="js-section" id="reviews">
+        <h2>Reviews</h2>
+        <div class="container">
+            <div class="review"> 
+                <i class="fa-solid fa-quote-left quotes quotes-left"></i>
+                <p class="title">What an incredible excursion!</p>
+                <p class="description">The Captain, crew, chef and dock staff were all friendly and professional. Highly recommend!</p>
+                <p class="name">&#8212 David, 2024</p>
+            </div>
+
+            <div class="review"> 
+                <i class="fa-solid fa-quote-left quotes quotes-left"></i>
+                <p class="title">Thank you!</p>
+                <p class="description">Fun sunset cruise. We sailed with Jessica Roy Raymond and Jose. The views were stunning. We stopped to swim and paddle board. The food prepared onboard was top notch. The crew was so kind and made sure everyone had a great time. Of course the sunset was awesome!</p>
+                <p class="name">&#8212 Lauren, 2024</p>
+            </div>
+            
+
+            <div class="review"> 
+                <i class="fa-solid fa-quote-left quotes quotes-left"></i>
+                <p class="title">Highly recommend!</p>
+                <p class="description">My wife, son and I took the catamaran trip yesterday and it was a pleasure from start to finish. The crew were all friendly and well prepared with delicious drinks and provided a gourmet spread for lunch. They also provided kayaks and equipment for water activities, always with safety and fun in mind. This was one of the best water tours we've ever taken and we highly recommend it!</p>
+                <p class="name">&#8212 Mark, 2024</p>
+            </div>
+            <div class="review"> 
+                <i class="fa-solid fa-quote-left quotes quotes-left"></i>
+                <p class="title">Perfect</p>
+                <p class="description">The experience was perfect but the crew made it extra special. Fun and attentive and professional we couldn’t have asked for better. Everyone in the group loved the adventure</p>
+                <p class="name">&#8212 Ashley, 2024</p>
+            </div>
+        </div>  
+        <button class="review-btn">+ Leave a review</button>
+    </section>
+
+
+    <!-- ----- Transportation section ----- -->
+    <section class="js-section" id="transportation">
+        <div class="image-container">
+            <div class="png"></div>
+        </div>
+        <div class="text-wrapper">
+            <h2>Need transportation?</h2>
+            <p>We connect you with trusted local transportation providers to make sure your Costa Rica trip goes smoothly. Whether you need an airport shuttle, a last-minute taxi ride, or a golf cart rental, we’ll put you in touch with the best services available. Let us take the stress out of getting around, so you can enjoy your adventure to the fullest!</p>
+            <button class="btn animate-box-2">Book Now</button>
+        </div>
+    </section>
+    
+
+    <!-- ----- Recommendations section ----- -->
+    <section id="recommendations" class="js-section recommendations">
+        <h2>Other tours you might like</h2>
+        <div class="tours">
+            <a href="horse.html" class="card">
+                <div class="image-container">
+                    <img src="media/activities/horse_00-min.jpeg"  alt="">
+                </div>
+                <div class="top-row">
+                    <div class="price-tag">
+                        <span class="from">From:</span>
+                        <span class="price">$65</span>
+                    </div>
+                </div>
+                <div class="bottom-row">
+                    <span class="location"><i class="fa-solid fa-location-dot"></i>Playa Conchal</span>
+                    <span class="name">Horseback Riding</span>
+                </div>
+            </a>
+            <a href="atv.html" class="card">
+                <div class="image-container">
+                    <img src="media/activities/atv/WhatsApp Image 2025-02-23 at 13.57.58_6e3a4fd4.jpg"  alt="">
+                </div>
+                <div class="top-row">
+                    <div class="price-tag">
+                        <span class="from">From:</span>
+                        <span class="price">$100</span>
+                    </div>
+                </div>
+                <div class="bottom-row">
+                    <span class="location"><i class="fa-solid fa-location-dot"></i>Potrero</span>
+                    <span class="name">ATV Cultural Tour</span>
+                </div>
+            </a>
+            <a href="river-float.html" class="card">
+                <div class="image-container">
+                    <img src="media/activities/river-float/Screenshot 2025-03-01 133240.png"  alt="">
+                </div>
+                <div class="top-row">
+                    <div class="price-tag">
+                        <span class="from">From:</span>
+                        <span class="price">$185</span>
+                    </div>
+                </div>
+                <div class="bottom-row">
+                    <span class="location"><i class="fa-solid fa-location-dot"></i>Rio Corobici</span>
+                    <span class="name">Wildlife River Float</span>
+                    <span class="name">& Sloth Trip</span>
+                </div>
+            </a>
+        </div>
+        <a class="btn animate-box" href="search-tours.html">See All Activities</a>
+    </section>
+
+
+    <!-- ----- FAQs section ----- -->
+    <section class="js-section" id="faq">
+        <h2>Frequently asked questions</h2>
+        <div class="container">
+
+            <!-- template FAQ -->
+            <div class="js-faq box">
+                <div class="question">
+                    <p>What should I bring?</p> 
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <div class="answer">
+                    <p>Pack some sunscreen, a towel, and your bathing suit! And don’t forget a hat to shield yourself from the sun. You’ll want to be comfortable and ready for a splashin’ good time.</p>
+                </div>
+            </div>
+            <div class="js-faq box">
+                <div class="question">
+                    <p>Is there Wi-Fi on board?</p> 
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <div class="answer">
+                    <p>No Wi-Fi here! This is your chance to truly unplug and soak up the beauty of the remote coastline. Leave the distractions behind and immerse yourself in the moment.</p>
+                </div>
+            </div>
+            <div class="js-faq box">
+                <div class="question">
+                    <p> What kind of food is on board?</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <div class="answer">
+                    <p>Get ready for some delicious and fresh bites! We’re talking juicy fruit, tasty burritos, and savory dips. Everything is easy to eat and perfect for a day on the water. You’ll be well-fueled for all your fun!</p> 
+                </div>
+            </div>
+
+            <div class="js-faq box">
+                <div class="question">
+                    <p>Are life vests provided?</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <div class="answer">
+                    <p>Absolutely! Safety first—life vests are available for everyone on board, so you can relax and enjoy your sail with peace of mind.</p>
+                </div>
+            </div>
+
+            <div class="js-faq box">
+                <div class="question">
+                    <p>What if it rains?</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <div class="answer">
+                    <p>Quick rain showers can be a refreshing part of the experience, especially during the rainy season. However, if the weather becomes unsafe, the tour will be canceled, and you’ll get a full refund. Since we’re not the tour operators, it’s best to contact the catamaran company directly for any weather-related concerns or arrangements.</p>
+                </div>
+            </div>
+
+            <div class="js-faq box">
+                <div class="question">
+                    <p>What is the cancellation policy?</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <div class="answer">
+                    <p>We’re here to connect you with amazing experiences, but we’re not the tour operators ourselves. For details on cancellations, please reach out to the catamaran company directly once we’ve made the introduction.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section id="contact">
+        <span class="section-heading">Contact Us</span>
+        <h2>Got any Questions?</h2>
+        <button class="btn animate-box modal-btn">Get in Touch</button>
+    </section>
+
+    <footer>
+        <p>&copy Buendía Tours, 2025. All rights reserved.</p>
+    </footer>
+    <script src="scripts/general.js"></script>
+    <script src="scripts/tour.js"></script>
+    <script src="https://kit.fontawesome.com/f7ff45fe22.js" crossorigin="anonymous"></script>
+</body>
+</html>
