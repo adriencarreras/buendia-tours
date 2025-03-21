@@ -169,6 +169,7 @@ h3{
     position: relative;
     color: var(--clr-neutral-300);
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .quick-links a.active{
