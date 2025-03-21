@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/tour.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Buendía Tours - Horseback Riding</title>
+</head>
+<body>
+    <div class="header-black-bg js-header-black-bg"></div>
+    <div class="modal-black-bg js-modal-black-bg"></div>
+
+    <div class="modal js-modal">
+        <button class="close"><i class="fa-solid fa-xmark"></i></button>
+        
+        <div class="top-row">
+            <i class="icon fa-regular fa-comments"></i>
+            <h2>Contact Us</h2>
+        </div>
+        
+        <div class="content">
+            <div class="text-wrapper">
+                <p>Hey there! If you're interested in any of the activities or services, we can put you in touch with the right company and help organize everything for you!</p>
+                <i class="emoji fa-regular fa-face-smile-wink"></i>
+            </div>
+        </div>
+
+        <div class="bottom-row">
+            <div class="btn-container">
+                <button class="js-copy-button" data-id="whatsapp">
+                    <span>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        (+506) 8744-0011
+                    </span>
+                </button>
+                <button class="js-copy-button" data-id="email">
+                    <span>info@buendiatours.com</span>
+                </button>
+            </div>
+
+            <p class="disclaimer">Just to be clear — we're not a tour operator, we just want to promote local businesses that we like!</p>
+        </div>
+    </div>
+
+    <header class="js-header">
+        <div class="mobile">
+            <a href="index.html" class="logo">
+                <img src="media/pngs/logo-buendia-tours-6.png" alt="Buendía Tours logo">
+            </a>
+
+            <button class="burger-btn js-burger-btn">
+                <div class="burger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </button>
+        </div>
+        <div class="extended js-extended">
+            <div class="navigation">
+                <a class="js-nav-link" data-id="tours-link"><i class="fa-solid fa-chevron-down"></i>Tours</a>
+                <a class="js-nav-link" data-id="services-link"><i class="fa-solid fa-chevron-down"></i>Services</a>
+                <a class="js-nav-link" data-id="info-link"><i class="fa-solid fa-chevron-down"></i>Info</a>
+            </div>
+
+            <div class="cta">
+                <button class="modal-btn"><i class="fa-brands fa-whatsapp"></i>Contact Us</button>
+            </div>
+        </div>
+
+        <div class="dropdown-container js-dropdown-container">
+            <button class="return-btn js-mobile-return-btn"><i class="fa-solid fa-angle-left"></i></button>
+            <div class="menu">
+                <div class="section section-tours js-dropdown-text" data-id="tours-link">
+                    <div class="text-wrapper">
+                        <h3>Local Tours</h3>
+                        <a href="atv.html">ATV Cultural Tours</a>
+                        <a href="catamaran.html">Catamaran Tour</a>
+                        <a href="scuba.html">Scuba Diving</a>
+                        <a href="horse.html">Horseback Riding</a>
+                        <a href="coming-soon.html">Snorkeling</a>
+                        <a href="coming-soon.html">Private Sailing Charter</a>
+                    </div>
+                    <div class="text-wrapper">
+                        <h3>Day Trips</h3>
+                        <a href="buenavista.html">Buenavista Family Adventure</a>
+                        <a href="diamante.html">Diamante Adventure Combo</a>
+                        <a href="leona.html">La Leona Waterfall</a>
+                        <a href="canyon.html">Wild Canyon Adrenaline Combo</a> 
+                        <a href="celeste.html">Rio Celeste Rainforest Waterfalls</a> 
+                        <a href="river-float.html">Wildlife River Float & Sloth Trip</a> 
+                        <a href="fumaroles.html">Rincón Fumaroles & Waterfall Swim</a> 
+                    </div>
+                </div>
+            
+                <div class="section section-services js-dropdown-text" data-id="services-link">
+                    <div class="text-wrapper">
+                        <h3>Transportation</h3>
+                        <a href="shuttle.html">Airport Shuttle</a>
+                        <a href="taxi.html">Local Taxi & Uber</a>
+                        <a href="golf-cart.html">Golf Cart Rentals</a>
+                    </div>
+            
+                    <div class="text-wrapper">
+                        <h3>Special Events</h3>
+                        <a href="coming-soon.html">Private Chef</a>
+                        <a href="coming-soon.html">Photographer</a>
+                    </div>
+            
+                    <div class="text-wrapper">
+                        <h3>Our Luxury Airbnb</h3>
+                        <a href="https://www.airbnb.com/rooms/779108667579821930?source_impression_id=p3_1731976665_P3VT8i3XAZTDteLu" target="_blank" title="Entire rental unit in Potrero, Costa Rica">Buendía Lux</a>
+                    </div>
+                </div>
+            
+                <div class="section section-info js-dropdown-text" data-id="info-link">
+                    <div class="text-wrapper">
+                        <h3>Information</h3>
+                        <a href="coming-soon.html">About Us</a>
+                        <a href="coming-soon.html">Potrero Blog</a>
+                        <a href="coming-soon.html">Events</a>
+                        <a href="coming-soon.html">Testimonials</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ----- Hero section ----- -->
+    <section class="hero flex-mid horse">
+        <div class="bg-overlay"></div>
+        <div class="bg-gradient-overlay"></div>
+
+        <div class="navigation">
+            <a href="index.html" class="animate-link">Home</a>
+            <a href="search-tours.html" class="animate-link">All Tours</a>
+            <a href="#">Horseback Riding</a>
+        </div>
+        
+        <div class="text-wrapper">
+            <h1>Horse Riding</h1>
+            <h2>Playa Conchal</h2>
+        </div>
+    </section>
+
+    <div class="fixed-row">
+        <div class="quick-links">
+            <a class="js-nav-a active" href="#overview">Overview</a>
+            <a class="js-nav-a" href="#reviews">Reviews</a>
+            <a class="js-nav-a" href="#transportation">Transportation</a>
+            <a class="js-nav-a" href="#recommendations">Similar Tours</a>
+            <a class="js-nav-a" href="#faq">FAQs</a>
+            <a class="js-nav-a" href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- ----- Overview section ----- -->
+    <section class="js-section" id="overview">
+        <div class="content">
+            <div class="sub-section">
+                <div class="title-row">
+                    <h3>Description</h3>
+                    <div class="quick-info">
+                        <div class="wrapper">
+                            <span>
+                                <i class="icon fa-solid fa-location-dot"></i>
+                                Location —</span>
+                                <span class="location">Playa Conchal</span>
+                        </div>
+                        <div class="wrapper">
+                            <span>
+                                <i class="icon fa-regular fa-clock"></i>Duration —</span>
+                            <span class="duration">1:30 hours</span>
+                        </div>
+                    </div>
+                </div>
+                <p>Exploring the coastline on horseback is such a special way to take in the beauty of the area. The ride along Playa Conchal is especially stunning—soft sand, vibrant blue waters, and lush greenery all around. No wonder it’s considered one of the most beautiful beaches in the world!</p>
+
+                <p>Over an hour and a half, you’ll ride along the shore and through shady tree-lined paths—a welcome break from the Costa Rican sun. Whether you’re a beginner or an experienced rider, this tour is open to all. The horses are well cared for, and the guides love sharing this incredible spot. If you’re looking for a peaceful adventure with amazing views, this is the perfect way to spend a morning or afternoon.</p>
+            </div>  
+        </div>
+
+        <div class="side-pannel">               
+            <div class="pricing">                   
+                <div class="option">
+                    <div class="row">
+                        <p>90 minutes ride</p>
+                        <p>$65*</p>
+                    </div>
+                    <p class="description">This tour is only available for a minimum of 2 people. Price is per person.</p>
+                </div>  
+                <button class="btn modal-btn">Book Tour</button>     
+                <p class="note">*13% VAT tax not included.</p>   
+            </div>
+
+            <div class="gallery">
+                <div class="container">
+                    <img src="/media/default.jpg" alt="">
+                    <button class="preview-btn">Gallery unavailable</button>
+                    <i class="fa-regular fa-images"></i>
+                    <span class="image-count">1 / 99 photos</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ----- Testimonials section ----- -->
+    <section class="js-section" id="testimonials">
+        <span class="section-heading">What People Say About This Tour</span>
+        <h2>Reviews</h2>
+        <div class="slider-container">
+            <i id="left" class="arrow js-arrow-btn fa-solid fa-angle-left"></i>
+            <div class="slider js-slider">
+                <!-- template slide -->
+                <div class="slide"> 
+                    <i class="fa-solid fa-quote-right quotes"></i>
+                    <p>What an amazing experience!  The horses and guides were lovely.  Beautiful ride along the beach.  And Nicole kept us very well informed on every detail of our adventure.  Highly recommend!</p> 
+                    <span class="name">DC</span>
+                    <span class="date">2024</span>
+                </div>
+
+                <div class="slide"> 
+                    <i class="fa-solid fa-quote-right quotes"></i>
+                    <p>Just the best time!! Happy and healthy horses, fabulous beaches and a wonderfully friendly guide. A dream come true.</p> 
+                    <span class="name">Richard</span>
+                    <span class="date">2024</span>
+                </div>
+                
+                <div class="slide"> 
+                    <i class="fa-solid fa-quote-right quotes"></i>
+                    <p>Our ride was perfection! Nicole is a gem of kindness and information. She is incredibly knowledgeable and thoughtful of both safety and a good experience. We enjoyed going on the beach and through shady trails on our ride and were able to see local wildlife, including monkeys. Would highly recommend</p> 
+                    <span class="name">Lyndsay</span>
+                    <span class="date">2024</span>
+                </div>
+                
+                <div class="slide"> 
+                    <i class="fa-solid fa-quote-right quotes"></i>
+                    <p>Being an experienced rider I tend to be very picky when it comes to horseback riding on vacation! However we had a lovely experience :) We were lucky to get some galloping in on the beach which is such an AMAZING time! Gustavo is so much fun, and we loved getting a private tour! Wish we had more beach riding and a little less “road” riding but this was absolutely worth it, and one of our favorite things we did for our week in CR!</p> 
+                    <span class="name">Amy</span>
+                    <span class="date">2024</span>
+                </div>
+                
+                <div class="slide"> 
+                    <i class="fa-solid fa-quote-right quotes"></i>
+                    <p>Great horseback riding! Highly recommend! Nicole is super easy to communicate with and made our booking process quite easy. Thank you to Gustavo for his kindness and expert guiding. Horses were sweet, and appeared very well cared for. The ride along the beach is really beautiful!</p> 
+                    <span class="name">Igor</span>
+                    <span class="date">2024</span>
+                </div>
+                <!--  -->
+            </div>
+            <i id="right" class="arrow js-arrow-btn fa-solid fa-angle-right"></i>
+        </div>  
+    </section>
+
+    <!-- ----- Transportation section ----- -->
+    <section id="transportation" class="js-section transportation">
+        <div class="image-container">
+            <div class="png"></div>
+        </div>
+        <div class="text-wrapper">
+            <h2>Need transportation?</h2>
+            <p>We connect you with trusted local transportation providers to make sure your Costa Rica trip goes smoothly. Whether you need an airport shuttle, a last-minute taxi ride, or a golf cart rental, we’ll put you in touch with the best services available. Let us take the stress out of getting around, so you can enjoy your adventure to the fullest!</p>
+            <button class="btn animate-box-2">Book Now</button>
+        </div>
+    </section>
+    
+
+    <!-- ----- Recommendations section ----- -->
+    <section id="recommendations" class="js-section recommendations">
+        <h2>Other tours you might like</h2>
+        <div class="tours">
+            <a href="coming-soon.html" class="card">
+                <div class="image-container">
+                    <img src="media/activities/horse_00-min.jpeg"  alt="">
+                </div>
+                <div class="top-row">
+                    <div class="price-tag">
+                        <span class="from">From:</span>
+                        <span class="price">$9.99</span>
+                    </div>
+                </div>
+                <div class="bottom-row">
+                    <span class="location"><i class="fa-solid fa-location-dot"></i>Playa Conchal</span>
+                    <span class="name">Horseback Riding</span>
+                </div>
+            </a>
+            <a href="coming-soon.html" class="card">
+                <div class="image-container">
+                    <img src="/media/activities/catamaran_00-min.jpeg"  alt="">
+                </div>
+                <div class="top-row">
+                    <div class="price-tag">
+                        <span class="from">From:</span>
+                        <span class="price">$85</span>
+                    </div>
+                </div>
+                <div class="bottom-row">
+                    <span class="location"><i class="fa-solid fa-location-dot"></i>Flamingo</span>
+                    <span class="name">Catamaran Tour</span>
+                </div>
+            </a>
+            <a href="coming-soon.html" class="card">
+                <div class="image-container">
+                    <img src="/media/activities/celeste_00-min.jpeg"  alt="">
+                </div>
+                <div class="top-row">
+                    <div class="price-tag">
+                        <span class="from">From:</span>
+                        <span class="price">$9.99</span>
+                    </div>
+                </div>
+                <div class="bottom-row">
+                    <span class="location"><i class="fa-solid fa-location-dot"></i>Rio Celeste, Alajuela</span>
+                    <span class="name">Rio Celeste</span>
+                </div>
+            </a>
+        </div>
+        <a class="btn animate-box" href="search-tours.html">See All Activities</a>
+    </section>
+
+
+    <!-- ----- FAQs section ----- -->
+    <section class="js-section" id="faq">
+        <h2>Frequently asked questions</h2>
+        <div class="container">
+
+            <!-- template FAQ -->
+            <div class="js-faq box">
+                <div class="question">
+                    <p>How long is the tour?</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <div class="answer">
+                    <p>The ride is about 1.5 hours — just the right amount of time to soak up the beauty of the beach and catch some shade under the trees. Trust us, you’ll love every minute of it!</p> 
+                </div>
+            </div>
+
+            <div class="js-faq box">
+                <div class="question">
+                    <p>Do I need to have riding experience?</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <div class="answer">
+                    <p>No worries! This tour is perfect for everyone, whether it’s your first time on a horse or you’ve ridden before. The guides are super friendly and make sure you feel comfortable and confident throughout the ride.</p> 
+                </div>
+            </div>
+            
+            <div class="js-faq box">
+                <div class="question">
+                    <p>What should I bring?</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <div class="answer">
+                    <p>We recommend bringing sunscreen, bug spray, a cap, and a bottle of water. Long pants are a good idea to avoid any rubbing from the saddle, and closed-toe shoes are better than flip-flops here! Don’t worry about carrying too much, though; there are small bags on the saddle pads for your essentials, so you can leave the backpack behind and focus on the adventure.</p> 
+                </div>
+            </div>
+            
+            <div class="js-faq box">
+                <div class="question">
+                    <p>Are the horses well taken care of?</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <div class="answer">
+                    <p>Absolutely! The horses are gentle, well-loved, and in great health. Nicole, the owner, takes excellent care of them, so you can relax and enjoy the ride with a happy horse.</p> 
+                </div>
+            </div>
+            
+            <div class="js-faq box">
+                <div class="question">
+                    <p>What’s the best time of day for the ride?</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <div class="answer">
+                    <p>We love heading out early in the morning or later in the afternoon, when the temperatures are cooler and the lighting makes the scenery even more magical.</p> 
+                </div>
+            </div>
+            
+            <div class="js-faq box">
+                <div class="question">
+                    <p>What is the cancellation policy?</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+
+                <div class="answer">
+                    <p>Please note that we are not responsible for any cancellations, as we are not a tour operator but simply the messengers ;) For information about cancellations, please ask the company directly once we have put you in contact.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <span class="section-heading">Contact Us</span>
+        <h2>Got any Questions?</h2>
+        <button class="btn animate-box modal-btn">Get in Touch</button>
+    </section>
+
+    
+    <footer>
+        <p>&copy Buendía Tours, 2025. All rights reserved.</p>
+    </footer>
+    <script src="scripts/general.js"></script>
+    <script src="scripts/tour.js"></script>
+    <script src="https://kit.fontawesome.com/f7ff45fe22.js" crossorigin="anonymous"></script>
+</body>
+</html>
